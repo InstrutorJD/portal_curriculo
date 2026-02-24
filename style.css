@@ -1,0 +1,13 @@
+/* Configuração da folha A4 */
+.cv-page {
+    display: none;
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+}
+
+@media print {
+    .no-print { display: none !important; }
+    body { background: white; padding: 0; }
+    .cv-page { display: block !important; box-shadow: none; }
+}
